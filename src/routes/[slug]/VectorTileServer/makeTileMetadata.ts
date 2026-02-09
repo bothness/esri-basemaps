@@ -38,11 +38,10 @@ export default function makeTileMetadata(tile_json: any) {
 	};
 
 	const service_json = {
-		currentVersion: 10.4,
+		currentVersion: 10.7,
 		name: tile_json.name || 'MapTiles',
 		capabilities: 'TilesOnly',
 		type: 'indexedVector',
-		tileMap: 'tilemap',
 		defaultStyles: 'resources/styles',
 		tiles: tile_json.tiles,
 		exportTilesAllowed: false,
