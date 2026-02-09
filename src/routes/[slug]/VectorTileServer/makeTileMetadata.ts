@@ -41,7 +41,7 @@ export default function makeTileMetadata(tile_json: any) {
 		currentVersion: 10.7,
 		name: tile_json.name || 'MapTiles',
 		capabilities: 'TilesOnly',
-		type: 'indexedFlat',
+		type: 'indexedVector',
 		defaultStyles: 'resources/styles',
 		tiles: tile_json.tiles,
 		exportTilesAllowed: false,
