@@ -12,7 +12,7 @@ export const GET: RequestHandler = async ({ params, fetch }) => {
             await (await fetch(tiles_url)).json(),
             await (await fetch(style_url)).json()
         ]);
-        return json(makeStyleMetadata(style, tiles));
+        return json(makeStyleMetadata(style, tiles), { headers: { 'Access-Control-Allow-Origin': '*' } });
     } catch {
         error(404, "Not found");
     }
